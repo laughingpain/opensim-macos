@@ -1,0 +1,31 @@
+2025-05-12 00:07:49,424 INFO  [OPENSIM MAIN]: configured log4net using default OpenSim.exe.config
+2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: System Locale is en-US
+2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: Runtime gave us 10 min worker threads and 1 min IOCP threads
+2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: Runtime gave us 32767 max worker threads and 1000 max IOCP threads
+2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: Limiting max worker threads to 1000
+2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: Threadpool set to 1000 max worker threads and 1000 max IOCP threads
+2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: Environment is supported by OpenSimulator.
+2025-05-12 00:07:49,436 INFO  Default culture changed to Englisch (Vereinigte Staaten)
+2025-05-12 00:07:49,444 INFO  [CONFIG]: Reading configuration settings
+2025-05-12 00:07:49,444 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimDefaults.ini
+2025-05-12 00:07:49,455 INFO  [CONFIG]: Loading environment variables for Config
+2025-05-12 00:07:49,464 INFO  [OPENSIM MAIN]: Using async_call_method SmartThreadPool
+2025-05-12 00:07:49,465 INFO  [OPENSIM MAIN] Running GC in workstation mode
+2025-05-12 00:07:49,466 INFO  [STARTUP]: Beginning startup processing
+2025-05-12 00:07:49,466 INFO  [STARTUP]: version: OpenSim 0.9.3.1 Nessie Dev 
+2025-05-12 00:07:49,466 INFO  [STARTUP]: Operating system version: Unix 15.4.1, .NET platform OSX/DotNet, Runtime 8.0.11
+2025-05-12 00:07:49,466 INFO  [STARTUP]: Processor Architecture: Arm64(le 64bit)
+2025-05-12 00:07:49,474 INFO  ====================================================================
+2025-05-12 00:07:49,474 INFO  ========================= STARTING OPENSIM =========================
+2025-05-12 00:07:49,474 INFO  ====================================================================
+2025-05-12 00:07:49,479 INFO  [LOCAL CONSOLE]: Persistent command line history is Enabled, up to 100 lines from file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimConsoleHistory.txt without timestamps
+2025-05-12 00:07:49,479 INFO  [LOCAL CONSOLE]: Creating new empty command line history file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimConsoleHistory.txt
+2025-05-12 00:07:49,481 INFO  [SERVER BASE]: Logging started to file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSim.log
+2025-05-12 00:07:49,487 INFO  [SERVER BASE]: Stats Logging started to file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimStats.log
+2025-05-12 00:07:49,488 INFO  [SERVER BASE]: Starting in /Users/alexanderklein/Documents/opensim-macos/bin
+2025-05-12 00:07:49,488 INFO  [SERVER BASE]: OpenSimulator version: OpenSim 0.9.3.1 Nessie Dev 
+2025-05-12 00:07:49,488 INFO  [SERVER BASE]: Operating system version: Unix 15.4.1, .NET platform OSX/DotNet, 64-bit
+2025-05-12 00:07:49,505 FATAL Fatal error: System.Exception: Configuration file is missing the [SimulationDataStore] section.  Have you copied OpenSim.ini.example to OpenSim.ini to reference config-include/ files?
+   at OpenSim.OpenSimBase.StartupSpecific() in /Users/alexanderklein/Documents/GitHub/opensim/OpenSim/Region/Application/OpenSimBase.cs:line 249
+   at OpenSim.OpenSim.StartupSpecific() in /Users/alexanderklein/Documents/GitHub/opensim/OpenSim/Region/Application/OpenSim.cs:line 179
+   at OpenSim.Framework.Servers.BaseOpenSimServer.Startup() in /Users/alexanderklein/Documents/GitHub/opensim/OpenSim/Framework/Servers/BaseOpenSimServer.cs:line 187
