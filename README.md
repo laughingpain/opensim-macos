@@ -27,10 +27,9 @@ click "Done", the same wondow appears
 
 - scroll down and Click "Allow Anyway"
 
-- now click in this window
+- now click in this window "Done"
 ![alt text](assets/error%20message.png)
 
-- click "Done"
 
 Your OpenSim instance should be running
 
