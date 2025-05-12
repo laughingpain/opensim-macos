@@ -19,7 +19,7 @@
 - if this window appears, click "Done"
 ![alt text](assets/error%20message.png)
 
-- the same wondow appears, leave it open
+- the same window appears, leave it open
 
 - open System Settings - > Privacy & Security
 
