@@ -1,31 +1,281 @@
-2025-05-12 00:07:49,424 INFO  [OPENSIM MAIN]: configured log4net using default OpenSim.exe.config
-2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: System Locale is en-US
-2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: Runtime gave us 10 min worker threads and 1 min IOCP threads
-2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: Runtime gave us 32767 max worker threads and 1000 max IOCP threads
-2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: Limiting max worker threads to 1000
-2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: Threadpool set to 1000 max worker threads and 1000 max IOCP threads
-2025-05-12 00:07:49,435 INFO  [OPENSIM MAIN]: Environment is supported by OpenSimulator.
-2025-05-12 00:07:49,436 INFO  Default culture changed to Englisch (Vereinigte Staaten)
-2025-05-12 00:07:49,444 INFO  [CONFIG]: Reading configuration settings
-2025-05-12 00:07:49,444 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimDefaults.ini
-2025-05-12 00:07:49,455 INFO  [CONFIG]: Loading environment variables for Config
-2025-05-12 00:07:49,464 INFO  [OPENSIM MAIN]: Using async_call_method SmartThreadPool
-2025-05-12 00:07:49,465 INFO  [OPENSIM MAIN] Running GC in workstation mode
-2025-05-12 00:07:49,466 INFO  [STARTUP]: Beginning startup processing
-2025-05-12 00:07:49,466 INFO  [STARTUP]: version: OpenSim 0.9.3.1 Nessie Dev 
-2025-05-12 00:07:49,466 INFO  [STARTUP]: Operating system version: Unix 15.4.1, .NET platform OSX/DotNet, Runtime 8.0.11
-2025-05-12 00:07:49,466 INFO  [STARTUP]: Processor Architecture: Arm64(le 64bit)
-2025-05-12 00:07:49,474 INFO  ====================================================================
-2025-05-12 00:07:49,474 INFO  ========================= STARTING OPENSIM =========================
-2025-05-12 00:07:49,474 INFO  ====================================================================
-2025-05-12 00:07:49,479 INFO  [LOCAL CONSOLE]: Persistent command line history is Enabled, up to 100 lines from file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimConsoleHistory.txt without timestamps
-2025-05-12 00:07:49,479 INFO  [LOCAL CONSOLE]: Creating new empty command line history file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimConsoleHistory.txt
-2025-05-12 00:07:49,481 INFO  [SERVER BASE]: Logging started to file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSim.log
-2025-05-12 00:07:49,487 INFO  [SERVER BASE]: Stats Logging started to file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimStats.log
-2025-05-12 00:07:49,488 INFO  [SERVER BASE]: Starting in /Users/alexanderklein/Documents/opensim-macos/bin
-2025-05-12 00:07:49,488 INFO  [SERVER BASE]: OpenSimulator version: OpenSim 0.9.3.1 Nessie Dev 
-2025-05-12 00:07:49,488 INFO  [SERVER BASE]: Operating system version: Unix 15.4.1, .NET platform OSX/DotNet, 64-bit
-2025-05-12 00:07:49,505 FATAL Fatal error: System.Exception: Configuration file is missing the [SimulationDataStore] section.  Have you copied OpenSim.ini.example to OpenSim.ini to reference config-include/ files?
-   at OpenSim.OpenSimBase.StartupSpecific() in /Users/alexanderklein/Documents/GitHub/opensim/OpenSim/Region/Application/OpenSimBase.cs:line 249
-   at OpenSim.OpenSim.StartupSpecific() in /Users/alexanderklein/Documents/GitHub/opensim/OpenSim/Region/Application/OpenSim.cs:line 179
-   at OpenSim.Framework.Servers.BaseOpenSimServer.Startup() in /Users/alexanderklein/Documents/GitHub/opensim/OpenSim/Framework/Servers/BaseOpenSimServer.cs:line 187
+2025-05-13 00:19:03,025 INFO  [OPENSIM MAIN]: configured log4net using default OpenSim.exe.config
+2025-05-13 00:19:03,034 INFO  [OPENSIM MAIN]: System Locale is en-US
+2025-05-13 00:19:03,034 INFO  [OPENSIM MAIN]: Runtime gave us 10 min worker threads and 1 min IOCP threads
+2025-05-13 00:19:03,034 INFO  [OPENSIM MAIN]: Runtime gave us 32767 max worker threads and 1000 max IOCP threads
+2025-05-13 00:19:03,034 INFO  [OPENSIM MAIN]: Limiting max worker threads to 1000
+2025-05-13 00:19:03,034 INFO  [OPENSIM MAIN]: Threadpool set to 1000 max worker threads and 1000 max IOCP threads
+2025-05-13 00:19:03,034 INFO  [OPENSIM MAIN]: Environment is supported by OpenSimulator.
+2025-05-13 00:19:03,034 INFO  Default culture changed to Englisch (Vereinigte Staaten)
+2025-05-13 00:19:03,045 INFO  [CONFIG]: Reading configuration settings
+2025-05-13 00:19:03,045 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/opensim/bin/OpenSimDefaults.ini
+2025-05-13 00:19:03,055 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/opensim/bin/OpenSim.ini
+2025-05-13 00:19:03,058 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/opensim/bin/config-include/osslDefaultEnable.ini
+2025-05-13 00:19:03,059 WARN  [CONFIG]: Could not find include file /Users/alexanderklein/opensim/bin/config-include/osslEnable.ini
+2025-05-13 00:19:03,059 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/opensim/bin/config-include/Standalone.ini
+2025-05-13 00:19:03,060 WARN  [CONFIG]: Could not find include file /Users/alexanderklein/opensim/bin/config-include/osslEnable.ini
+2025-05-13 00:19:03,061 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/opensim/bin/config-include/StandaloneCommon.ini
+2025-05-13 00:19:03,062 WARN  [CONFIG]: Could not find include file /Users/alexanderklein/opensim/bin/config-include/FlotsamCache.ini
+2025-05-13 00:19:03,062 WARN  [CONFIG]: Could not find include file /Users/alexanderklein/opensim/bin/config-include/osslEnable.ini
+2025-05-13 00:19:03,063 INFO  [CONFIG]: Loading environment variables for Config
+2025-05-13 00:19:03,071 INFO  [OPENSIM MAIN]: Using async_call_method SmartThreadPool
+2025-05-13 00:19:03,071 INFO  [OPENSIM MAIN] Running GC in workstation mode
+2025-05-13 00:19:03,073 INFO  [STARTUP]: Beginning startup processing
+2025-05-13 00:19:03,073 INFO  [STARTUP]: version: OpenSim 0.9.3.1 Nessie Dev 05969fc
+2025-05-13 00:19:03,073 INFO  [STARTUP]: Operating system version: Unix 15.4.1, .NET platform OSX/DotNet, Runtime 8.0.15
+2025-05-13 00:19:03,073 INFO  [STARTUP]: Processor Architecture: Arm64(le 64bit)
+2025-05-13 00:19:03,076 INFO  ====================================================================
+2025-05-13 00:19:03,076 INFO  ========================= STARTING OPENSIM =========================
+2025-05-13 00:19:03,076 INFO  ====================================================================
+2025-05-13 00:19:03,080 INFO  [LOCAL CONSOLE]: Persistent command line history is Enabled, up to 100 lines from file /Users/alexanderklein/opensim/bin/OpenSimConsoleHistory.txt without timestamps
+2025-05-13 00:19:03,080 INFO  [LOCAL CONSOLE]: Creating new empty command line history file /Users/alexanderklein/opensim/bin/OpenSimConsoleHistory.txt
+2025-05-13 00:19:03,082 INFO  [SERVER BASE]: Logging started to file /Users/alexanderklein/opensim/bin/OpenSim.log
+2025-05-13 00:19:03,088 INFO  [SERVER BASE]: Stats Logging started to file /Users/alexanderklein/opensim/bin/OpenSimStats.log
+2025-05-13 00:19:03,089 INFO  [SERVER BASE]: Starting in /Users/alexanderklein/opensim/bin
+2025-05-13 00:19:03,089 INFO  [SERVER BASE]: OpenSimulator version: OpenSim 0.9.3.1 Nessie Dev 05969fc
+2025-05-13 00:19:03,089 INFO  [SERVER BASE]: Operating system version: Unix 15.4.1, .NET platform OSX/DotNet, 64-bit
+2025-05-13 00:19:03,963 DEBUG [MIGRATIONS]: RegionStore data tables already up to date at revision 67
+2025-05-13 00:19:03,970 INFO  [REGION DB]: MySql - connecting: Data Source=localhost;Database=opensim;User ID=root;Password=***;Old Guids=true;SslMode=None;
+2025-05-13 00:19:03,973 DEBUG [MIGRATIONS]: EstateStore data tables already up to date at revision 36
+2025-05-13 00:19:03,980 INFO  [BASE HTTP SERVER]: Starting HTTP server on port 9000
+2025-05-13 00:19:03,983 DEBUG [WATCHDOG]: Started tracking thread PollServiceWatcherThread, ID 13
+2025-05-13 00:19:03,996 INFO  [PLUGINS]: Initializing addin manager
+2025-05-13 00:19:04,172 INFO  [PLUGINS]: Plugin Loaded: OpenSim
+2025-05-13 00:19:04,172 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Data
+2025-05-13 00:19:04,173 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.Framework
+2025-05-13 00:19:04,173 INFO  [PLUGINS]: Plugin Loaded: Robust
+2025-05-13 00:19:04,176 INFO  [PLUGINS]: Loading extension point /OpenSim/Startup
+2025-05-13 00:19:04,181 INFO  [PLUGINS]: Trying plugin /OpenSim/Startup/LoadRegions
+2025-05-13 00:19:04,181 INFO  [PLUGINS]: Plugin Loaded: OpenSim.ApplicationPlugins.RemoteController
+2025-05-13 00:19:04,181 INFO  [PLUGINS]: Trying plugin /OpenSim/Startup/LoadRegions
+2025-05-13 00:19:04,181 INFO  [PLUGINS]: Plugin Loaded: OpenSim.ApplicationPlugins.LoadRegions
+2025-05-13 00:19:04,181 INFO  [PLUGINS]: Trying plugin /OpenSim/Startup/LoadRegions
+2025-05-13 00:19:04,181 INFO  [PLUGINS]: Plugin Loaded: OpenSim.ApplicationPlugins.RegionModulesController
+2025-05-13 00:19:04,188 INFO  [PLUGINS]: Plugin Loaded: LindenUDP
+2025-05-13 00:19:04,189 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.ubOdeMeshing
+2025-05-13 00:19:04,189 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Groups
+2025-05-13 00:19:04,189 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.POS
+2025-05-13 00:19:04,190 INFO  [PLUGINS]: Plugin Loaded: LindenCaps
+2025-05-13 00:19:04,190 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.ubOde
+2025-05-13 00:19:04,190 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.BulletS
+2025-05-13 00:19:04,191 INFO  [PLUGINS]: Plugin Loaded: OpenSim.OfflineIM
+2025-05-13 00:19:04,191 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.OptionalModules
+2025-05-13 00:19:04,193 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.BasicPhysics
+2025-05-13 00:19:04,193 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.CoreModules
+2025-05-13 00:19:04,196 INFO  [PLUGINS]: Plugin Loaded: YEngine
+2025-05-13 00:19:04,197 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.Meshing
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin LindenUDP, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.ubOdeMeshing, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin OpenSim.Groups, (version 0.9.3.1), loaded 5 modules, 5 shared, 0 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.POS, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin LindenCaps, (version 0.9.3.1), loaded 17 modules, 5 shared, 12 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.ubOde, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.BulletS, (version 0.9.3.1), loaded 2 modules, 0 shared, 2 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin OpenSim.OfflineIM, (version 0.9.3.1), loaded 1 modules, 1 shared, 0 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin OpenSim.Region.OptionalModules, (version 0.9.3.1), loaded 39 modules, 20 shared, 19 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.BasicPhysics, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin OpenSim.Region.CoreModules, (version 0.9.3.1), loaded 115 modules, 74 shared, 41 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin YEngine, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:19:04,197 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.Meshing, (version 0.9.3.1), loaded 2 modules, 0 shared, 2 non-shared 0 unknown
+2025-05-13 00:19:04,212 DEBUG [LURE MODULE]: LureModule enabled
+2025-05-13 00:19:04,219 DEBUG [MIGRATIONS]: FriendsStore data tables already up to date at revision 4
+2025-05-13 00:19:04,219 DEBUG [FRIENDS MODULE]: FriendsModule enabled.
+2025-05-13 00:19:04,220 DEBUG [MESSAGE TRANSFER]: Module enabled
+2025-05-13 00:19:04,221 DEBUG [HG MESSAGE TRANSFER]: Disabled by configuration
+2025-05-13 00:19:04,223 INFO  [GROUPS]: Groups disabled in configuration
+2025-05-13 00:19:04,225 DEBUG [GRID SERVICE]: Starting...
+2025-05-13 00:19:04,228 INFO  [REGION GRID CONNECTOR]: enabled in Standalone mode
+2025-05-13 00:19:04,235 DEBUG [MIGRATIONS]: AuthStore data tables already up to date at revision 4
+2025-05-13 00:19:04,235 INFO  [AUTH CONNECTOR]: Local Authentication connector enabled
+2025-05-13 00:19:04,237 DEBUG [MIGRATIONS]: Avatar data tables already up to date at revision 3
+2025-05-13 00:19:04,237 DEBUG [AVATAR SERVICE]: Starting avatar service
+2025-05-13 00:19:04,238 INFO  [AVATAR CONNECTOR]: Local avatar connector enabled
+2025-05-13 00:19:04,238 DEBUG [LOCAL INVENTORY SERVICES CONNECTOR]: Service dll = OpenSim.Services.InventoryService.dll:XInventoryService
+2025-05-13 00:19:04,240 DEBUG [MIGRATIONS]: InventoryStore data tables already up to date at revision 7
+2025-05-13 00:19:04,240 INFO  [LOCAL INVENTORY SERVICES CONNECTOR]: Local inventory connector enabled
+2025-05-13 00:19:04,242 DEBUG [LOCAL PRESENCE CONNECTOR]: Service dll = OpenSim.Services.PresenceService.dll:PresenceService
+2025-05-13 00:19:04,243 DEBUG [PRESENCE SERVICE]: Starting presence service
+2025-05-13 00:19:04,243 INFO  [LOCAL PRESENCE CONNECTOR]: Local presence connector enabled
+2025-05-13 00:19:04,243 INFO  [NEIGHBOUR CONNECTOR]: Neighbour out connector enabled
+2025-05-13 00:19:04,243 INFO  [LOCAL SIMULATION CONNECTOR]: Local simulation enabled.
+2025-05-13 00:19:04,248 DEBUG [MAP IMAGE SERVICE]: Starting MapImage service
+2025-05-13 00:19:09,011 INFO  [MAP IMAGE SERVICE MODULE]: enabled with no refresh and service object OpenSim.Services.MapImageService.dll:MapImageService
+2025-05-13 00:19:09,014 DEBUG [MIGRATIONS]: GridUserStore data tables already up to date at revision 2
+2025-05-13 00:19:09,014 DEBUG [GRID USER SERVICE]: Starting user grid service
+2025-05-13 00:19:09,014 DEBUG [ACTIVITY DETECTOR]: starting 
+2025-05-13 00:19:09,014 INFO  [LOCAL GRID USER SERVICE CONNECTOR]: Local grid user connector enabled
+2025-05-13 00:19:09,016 DEBUG [MIGRATIONS]: AgentPrefs data tables already up to date at revision 1
+2025-05-13 00:19:09,016 DEBUG [AGENT PREFERENCES SERVICE]: Starting agent preferences service
+2025-05-13 00:19:09,016 INFO  [AGENT PREFERENCES CONNECTOR]: Local agent preferences connector enabled
+2025-05-13 00:19:09,019 DEBUG [MIGRATIONS]: AssetStore data tables already up to date at revision 10
+2025-05-13 00:19:09,019 DEBUG [ASSET SERVICE]: Loading default asset set from assets/AssetSets.xml
+2025-05-13 00:19:09,230 DEBUG [ASSET SERVICE]: Local asset service enabled
+2025-05-13 00:19:09,230 INFO  [REGIONASSETCONNECTOR]: enabled
+2025-05-13 00:19:09,235 DEBUG [MIGRATIONS]: UserAccount data tables already up to date at revision 6
+2025-05-13 00:19:09,235 DEBUG [GRID SERVICE]: Starting...
+2025-05-13 00:19:09,235 DEBUG [MIGRATIONS]: AuthStore data tables already up to date at revision 4
+2025-05-13 00:19:09,235 DEBUG [MIGRATIONS]: GridUserStore data tables already up to date at revision 2
+2025-05-13 00:19:09,236 DEBUG [GRID USER SERVICE]: Starting user grid service
+2025-05-13 00:19:09,236 DEBUG [MIGRATIONS]: InventoryStore data tables already up to date at revision 7
+2025-05-13 00:19:09,236 DEBUG [MIGRATIONS]: Avatar data tables already up to date at revision 3
+2025-05-13 00:19:09,236 DEBUG [AVATAR SERVICE]: Starting avatar service
+2025-05-13 00:19:09,251 INFO  [LOCAL USER ACCOUNT SERVICE CONNECTOR]: Local user connector enabled
+2025-05-13 00:19:09,251 INFO  [LAND CONNECTOR]: Local land connector enabled
+2025-05-13 00:19:09,252 INFO  [LOCAL USERPROFILES SERVICE CONNECTOR]: Local user profiles connector enabled
+2025-05-13 00:19:09,252 INFO  [GRIDINFO IN CONNECTOR]: GridInfo Service In Connector enabled
+2025-05-13 00:19:09,252 INFO  [LLLOGIN IN CONNECTOR]: LLLoginerviceInConnector enabled
+2025-05-13 00:19:09,253 INFO  [MAP SERVICE IN CONNECTOR]: MapImage Service In Connector enabled
+2025-05-13 00:19:09,256 INFO  [Serialiser] Enabled, using save dir "exports"
+2025-05-13 00:19:09,257 DEBUG [BASIC SEARCH MODULE]: BasicSearchModule is enabled
+2025-05-13 00:19:09,257 DEBUG [LIBRARY MODULE]: Library service dll is OpenSim.Services.InventoryService.dll:LibraryService
+2025-05-13 00:19:09,258 DEBUG [LIBRARY]: Starting library service...
+2025-05-13 00:19:09,260 INFO  [LIBRARY INVENTORY]: Loading library control file ./inventory/Libraries.xml
+2025-05-13 00:19:09,268 DEBUG [USER MANAGEMENT MODULE]: BasicUserManagementModule is enabled
+2025-05-13 00:19:09,270 INFO  [FLOTSAM ASSET CACHE]: FlotsamAssetCache enabled
+2025-05-13 00:19:09,270 DEBUG [FLOTSAM ASSET CACHE]: AssetCache section missing from config (not copied config-include/FlotsamCache.ini.example?  Using defaults.
+2025-05-13 00:19:09,270 INFO  [FLOTSAM ASSET CACHE]: Cache Directory assetcache
+2025-05-13 00:19:09,272 DEBUG [VECTORRENDERMODULE]: using font "Arial" for text rendering.
+2025-05-13 00:19:09,281 DEBUG [OUTBOUND URL FILTER]: OutboundDisallowForUserScripts for Script dynamic texture image module is [0.0.0.0/8|10.0.0.0/8|100.64.0.0/10|127.0.0.0/8|169.254.0.0/16|172.16.0.0/12|192.0.0.0/24|192.0.2.0/24|192.88.99.0/24|192.168.0.0/16|198.18.0.0/15|198.51.100.0/24|203.0.113.0/24|224.0.0.0/4|240.0.0.0/4|255.255.255.255/32]
+2025-05-13 00:19:09,281 DEBUG [OUTBOUND URL FILTER]: OutboundDisallowForUserScriptsExcept for Script dynamic texture image module is []
+2025-05-13 00:19:09,293 DEBUG [RADMIN]: Creating default avatar entries
+2025-05-13 00:19:09,293 DEBUG [RADMIN]: No default avatar information available
+2025-05-13 00:19:09,293 INFO  [RADMIN]: Default avatars not loaded
+2025-05-13 00:19:09,294 INFO  [LOAD REGIONS PLUGIN]: Loading region configurations from filesystem
+2025-05-13 00:21:34,676 INFO  [OPENSIM MAIN]: configured log4net using default OpenSim.exe.config
+2025-05-13 00:21:34,688 INFO  [OPENSIM MAIN]: System Locale is en-US
+2025-05-13 00:21:34,689 INFO  [OPENSIM MAIN]: Runtime gave us 10 min worker threads and 1 min IOCP threads
+2025-05-13 00:21:34,689 INFO  [OPENSIM MAIN]: Runtime gave us 32767 max worker threads and 1000 max IOCP threads
+2025-05-13 00:21:34,689 INFO  [OPENSIM MAIN]: Limiting max worker threads to 1000
+2025-05-13 00:21:34,689 INFO  [OPENSIM MAIN]: Threadpool set to 1000 max worker threads and 1000 max IOCP threads
+2025-05-13 00:21:34,689 INFO  [OPENSIM MAIN]: Environment is supported by OpenSimulator.
+2025-05-13 00:21:34,689 INFO  Default culture changed to Englisch (Vereinigte Staaten)
+2025-05-13 00:21:34,702 INFO  [CONFIG]: Reading configuration settings
+2025-05-13 00:21:34,702 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimDefaults.ini
+2025-05-13 00:21:34,741 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSim.ini
+2025-05-13 00:21:34,744 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/Documents/opensim-macos/bin/config-include/osslDefaultEnable.ini
+2025-05-13 00:21:34,746 WARN  [CONFIG]: Could not find include file /Users/alexanderklein/Documents/opensim-macos/bin/config-include/osslEnable.ini
+2025-05-13 00:21:34,746 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/Documents/opensim-macos/bin/config-include/Standalone.ini
+2025-05-13 00:21:34,747 WARN  [CONFIG]: Could not find include file /Users/alexanderklein/Documents/opensim-macos/bin/config-include/osslEnable.ini
+2025-05-13 00:21:34,748 INFO  [CONFIG]: Reading configuration file /Users/alexanderklein/Documents/opensim-macos/bin/config-include/StandaloneCommon.ini
+2025-05-13 00:21:34,749 WARN  [CONFIG]: Could not find include file /Users/alexanderklein/Documents/opensim-macos/bin/config-include/FlotsamCache.ini
+2025-05-13 00:21:34,749 WARN  [CONFIG]: Could not find include file /Users/alexanderklein/Documents/opensim-macos/bin/config-include/osslEnable.ini
+2025-05-13 00:21:34,750 INFO  [CONFIG]: Loading environment variables for Config
+2025-05-13 00:21:34,759 INFO  [OPENSIM MAIN]: Using async_call_method SmartThreadPool
+2025-05-13 00:21:34,759 INFO  [OPENSIM MAIN] Running GC in workstation mode
+2025-05-13 00:21:34,761 INFO  [STARTUP]: Beginning startup processing
+2025-05-13 00:21:34,761 INFO  [STARTUP]: version: OpenSim 0.9.3.1 Nessie Dev b6ed855
+2025-05-13 00:21:34,761 INFO  [STARTUP]: Operating system version: Unix 15.4.1, .NET platform OSX/DotNet, Runtime 8.0.15
+2025-05-13 00:21:34,761 INFO  [STARTUP]: Processor Architecture: Arm64(le 64bit)
+2025-05-13 00:21:34,764 INFO  ====================================================================
+2025-05-13 00:21:34,764 INFO  ========================= STARTING OPENSIM =========================
+2025-05-13 00:21:34,764 INFO  ====================================================================
+2025-05-13 00:21:34,768 INFO  [LOCAL CONSOLE]: Persistent command line history is Enabled, up to 100 lines from file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimConsoleHistory.txt without timestamps
+2025-05-13 00:21:34,768 INFO  [LOCAL CONSOLE]: Read 0 lines of command line history from file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimConsoleHistory.txt
+2025-05-13 00:21:34,771 INFO  [SERVER BASE]: Logging started to file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSim.log
+2025-05-13 00:21:34,777 INFO  [SERVER BASE]: Stats Logging started to file /Users/alexanderklein/Documents/opensim-macos/bin/OpenSimStats.log
+2025-05-13 00:21:34,777 INFO  [SERVER BASE]: Starting in /Users/alexanderklein/Documents/opensim-macos/bin
+2025-05-13 00:21:34,777 INFO  [SERVER BASE]: OpenSimulator version: OpenSim 0.9.3.1 Nessie Dev b6ed855
+2025-05-13 00:21:34,777 INFO  [SERVER BASE]: Operating system version: Unix 15.4.1, .NET platform OSX/DotNet, 64-bit
+2025-05-13 00:21:35,098 DEBUG [MIGRATIONS]: RegionStore data tables already up to date at revision 67
+2025-05-13 00:21:35,105 INFO  [REGION DB]: MySql - connecting: Data Source=localhost;Database=opensim;User ID=root;Password=***;Old Guids=true;SslMode=None;
+2025-05-13 00:21:35,108 DEBUG [MIGRATIONS]: EstateStore data tables already up to date at revision 36
+2025-05-13 00:21:35,117 INFO  [BASE HTTP SERVER]: Starting HTTP server on port 9000
+2025-05-13 00:21:35,120 DEBUG [WATCHDOG]: Started tracking thread PollServiceWatcherThread, ID 13
+2025-05-13 00:21:35,132 INFO  [PLUGINS]: Initializing addin manager
+2025-05-13 00:21:35,321 INFO  [PLUGINS]: Plugin Loaded: OpenSim
+2025-05-13 00:21:35,322 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Data
+2025-05-13 00:21:35,322 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.Framework
+2025-05-13 00:21:35,322 INFO  [PLUGINS]: Plugin Loaded: Robust
+2025-05-13 00:21:35,326 INFO  [PLUGINS]: Loading extension point /OpenSim/Startup
+2025-05-13 00:21:35,331 INFO  [PLUGINS]: Trying plugin /OpenSim/Startup/LoadRegions
+2025-05-13 00:21:35,332 INFO  [PLUGINS]: Plugin Loaded: OpenSim.ApplicationPlugins.LoadRegions
+2025-05-13 00:21:35,332 INFO  [PLUGINS]: Trying plugin /OpenSim/Startup/LoadRegions
+2025-05-13 00:21:35,332 INFO  [PLUGINS]: Plugin Loaded: OpenSim.ApplicationPlugins.RegionModulesController
+2025-05-13 00:21:35,332 INFO  [PLUGINS]: Trying plugin /OpenSim/Startup/LoadRegions
+2025-05-13 00:21:35,332 INFO  [PLUGINS]: Plugin Loaded: OpenSim.ApplicationPlugins.RemoteController
+2025-05-13 00:21:35,336 INFO  [PLUGINS]: Plugin Loaded: OpenSim.OfflineIM
+2025-05-13 00:21:35,337 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.BasicPhysics
+2025-05-13 00:21:35,337 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Groups
+2025-05-13 00:21:35,337 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.ubOdeMeshing
+2025-05-13 00:21:35,337 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.Meshing
+2025-05-13 00:21:35,338 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.CoreModules
+2025-05-13 00:21:35,342 INFO  [PLUGINS]: Plugin Loaded: LindenUDP
+2025-05-13 00:21:35,342 INFO  [PLUGINS]: Plugin Loaded: LindenCaps
+2025-05-13 00:21:35,342 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.OptionalModules
+2025-05-13 00:21:35,343 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.POS
+2025-05-13 00:21:35,343 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.BulletS
+2025-05-13 00:21:35,344 INFO  [PLUGINS]: Plugin Loaded: YEngine
+2025-05-13 00:21:35,344 INFO  [PLUGINS]: Plugin Loaded: OpenSim.Region.PhysicsModule.ubOde
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin OpenSim.OfflineIM, (version 0.9.3.1), loaded 1 modules, 1 shared, 0 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.BasicPhysics, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin OpenSim.Groups, (version 0.9.3.1), loaded 5 modules, 5 shared, 0 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.ubOdeMeshing, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.Meshing, (version 0.9.3.1), loaded 2 modules, 0 shared, 2 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin OpenSim.Region.CoreModules, (version 0.9.3.1), loaded 115 modules, 74 shared, 41 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin LindenUDP, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin LindenCaps, (version 0.9.3.1), loaded 17 modules, 5 shared, 12 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin OpenSim.Region.OptionalModules, (version 0.9.3.1), loaded 39 modules, 20 shared, 19 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.POS, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.BulletS, (version 0.9.3.1), loaded 2 modules, 0 shared, 2 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin YEngine, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:21:35,344 INFO  [REGIONMODULES]: From plugin OpenSim.Region.PhysicsModule.ubOde, (version 0.9.3.1), loaded 1 modules, 0 shared, 1 non-shared 0 unknown
+2025-05-13 00:21:35,347 DEBUG [LURE MODULE]: LureModule enabled
+2025-05-13 00:21:35,351 DEBUG [MIGRATIONS]: FriendsStore data tables already up to date at revision 4
+2025-05-13 00:21:35,351 DEBUG [FRIENDS MODULE]: FriendsModule enabled.
+2025-05-13 00:21:35,352 DEBUG [MESSAGE TRANSFER]: Module enabled
+2025-05-13 00:21:35,353 DEBUG [HG MESSAGE TRANSFER]: Disabled by configuration
+2025-05-13 00:21:35,354 INFO  [GROUPS]: Groups disabled in configuration
+2025-05-13 00:21:35,357 DEBUG [GRID SERVICE]: Starting...
+2025-05-13 00:21:35,360 INFO  [REGION GRID CONNECTOR]: enabled in Standalone mode
+2025-05-13 00:21:35,363 DEBUG [MIGRATIONS]: AuthStore data tables already up to date at revision 4
+2025-05-13 00:21:35,363 INFO  [AUTH CONNECTOR]: Local Authentication connector enabled
+2025-05-13 00:21:35,366 DEBUG [MIGRATIONS]: Avatar data tables already up to date at revision 3
+2025-05-13 00:21:35,366 DEBUG [AVATAR SERVICE]: Starting avatar service
+2025-05-13 00:21:35,366 INFO  [AVATAR CONNECTOR]: Local avatar connector enabled
+2025-05-13 00:21:35,367 DEBUG [LOCAL INVENTORY SERVICES CONNECTOR]: Service dll = OpenSim.Services.InventoryService.dll:XInventoryService
+2025-05-13 00:21:35,368 DEBUG [MIGRATIONS]: InventoryStore data tables already up to date at revision 7
+2025-05-13 00:21:35,368 INFO  [LOCAL INVENTORY SERVICES CONNECTOR]: Local inventory connector enabled
+2025-05-13 00:21:35,370 DEBUG [LOCAL PRESENCE CONNECTOR]: Service dll = OpenSim.Services.PresenceService.dll:PresenceService
+2025-05-13 00:21:35,371 DEBUG [PRESENCE SERVICE]: Starting presence service
+2025-05-13 00:21:35,371 INFO  [LOCAL PRESENCE CONNECTOR]: Local presence connector enabled
+2025-05-13 00:21:35,371 INFO  [NEIGHBOUR CONNECTOR]: Neighbour out connector enabled
+2025-05-13 00:21:35,371 INFO  [LOCAL SIMULATION CONNECTOR]: Local simulation enabled.
+2025-05-13 00:21:35,375 DEBUG [MAP IMAGE SERVICE]: Starting MapImage service
+2025-05-13 00:21:35,657 INFO  [MAP IMAGE SERVICE MODULE]: enabled with no refresh and service object OpenSim.Services.MapImageService.dll:MapImageService
+2025-05-13 00:21:35,660 DEBUG [MIGRATIONS]: GridUserStore data tables already up to date at revision 2
+2025-05-13 00:21:35,660 DEBUG [GRID USER SERVICE]: Starting user grid service
+2025-05-13 00:21:35,660 DEBUG [ACTIVITY DETECTOR]: starting 
+2025-05-13 00:21:35,661 INFO  [LOCAL GRID USER SERVICE CONNECTOR]: Local grid user connector enabled
+2025-05-13 00:21:35,664 DEBUG [MIGRATIONS]: AgentPrefs data tables already up to date at revision 1
+2025-05-13 00:21:35,664 DEBUG [AGENT PREFERENCES SERVICE]: Starting agent preferences service
+2025-05-13 00:21:35,664 INFO  [AGENT PREFERENCES CONNECTOR]: Local agent preferences connector enabled
+2025-05-13 00:21:35,668 DEBUG [MIGRATIONS]: AssetStore data tables already up to date at revision 10
+2025-05-13 00:21:35,669 DEBUG [ASSET SERVICE]: Loading default asset set from assets/AssetSets.xml
+2025-05-13 00:21:35,908 DEBUG [ASSET SERVICE]: Local asset service enabled
+2025-05-13 00:21:35,908 INFO  [REGIONASSETCONNECTOR]: enabled
+2025-05-13 00:21:35,913 DEBUG [MIGRATIONS]: UserAccount data tables already up to date at revision 6
+2025-05-13 00:21:35,913 DEBUG [GRID SERVICE]: Starting...
+2025-05-13 00:21:35,913 DEBUG [MIGRATIONS]: AuthStore data tables already up to date at revision 4
+2025-05-13 00:21:35,914 DEBUG [MIGRATIONS]: GridUserStore data tables already up to date at revision 2
+2025-05-13 00:21:35,914 DEBUG [GRID USER SERVICE]: Starting user grid service
+2025-05-13 00:21:35,914 DEBUG [MIGRATIONS]: InventoryStore data tables already up to date at revision 7
+2025-05-13 00:21:35,915 DEBUG [MIGRATIONS]: Avatar data tables already up to date at revision 3
+2025-05-13 00:21:35,915 DEBUG [AVATAR SERVICE]: Starting avatar service
+2025-05-13 00:21:35,929 INFO  [LOCAL USER ACCOUNT SERVICE CONNECTOR]: Local user connector enabled
+2025-05-13 00:21:35,930 INFO  [LAND CONNECTOR]: Local land connector enabled
+2025-05-13 00:21:35,931 INFO  [LOCAL USERPROFILES SERVICE CONNECTOR]: Local user profiles connector enabled
+2025-05-13 00:21:35,931 INFO  [GRIDINFO IN CONNECTOR]: GridInfo Service In Connector enabled
+2025-05-13 00:21:35,931 INFO  [LLLOGIN IN CONNECTOR]: LLLoginerviceInConnector enabled
+2025-05-13 00:21:35,932 INFO  [MAP SERVICE IN CONNECTOR]: MapImage Service In Connector enabled
+2025-05-13 00:21:35,935 INFO  [Serialiser] Enabled, using save dir "exports"
+2025-05-13 00:21:35,936 DEBUG [BASIC SEARCH MODULE]: BasicSearchModule is enabled
+2025-05-13 00:21:35,936 DEBUG [LIBRARY MODULE]: Library service dll is OpenSim.Services.InventoryService.dll:LibraryService
+2025-05-13 00:21:35,937 DEBUG [LIBRARY]: Starting library service...
+2025-05-13 00:21:35,939 INFO  [LIBRARY INVENTORY]: Loading library control file ./inventory/Libraries.xml
+2025-05-13 00:21:35,949 DEBUG [USER MANAGEMENT MODULE]: BasicUserManagementModule is enabled
+2025-05-13 00:21:35,951 INFO  [FLOTSAM ASSET CACHE]: FlotsamAssetCache enabled
+2025-05-13 00:21:35,951 DEBUG [FLOTSAM ASSET CACHE]: AssetCache section missing from config (not copied config-include/FlotsamCache.ini.example?  Using defaults.
+2025-05-13 00:21:35,951 INFO  [FLOTSAM ASSET CACHE]: Cache Directory assetcache
+2025-05-13 00:21:35,954 DEBUG [VECTORRENDERMODULE]: using font "Arial" for text rendering.
+2025-05-13 00:21:35,964 DEBUG [OUTBOUND URL FILTER]: OutboundDisallowForUserScripts for Script dynamic texture image module is [0.0.0.0/8|10.0.0.0/8|100.64.0.0/10|127.0.0.0/8|169.254.0.0/16|172.16.0.0/12|192.0.0.0/24|192.0.2.0/24|192.88.99.0/24|192.168.0.0/16|198.18.0.0/15|198.51.100.0/24|203.0.113.0/24|224.0.0.0/4|240.0.0.0/4|255.255.255.255/32]
+2025-05-13 00:21:35,964 DEBUG [OUTBOUND URL FILTER]: OutboundDisallowForUserScriptsExcept for Script dynamic texture image module is []
+2025-05-13 00:21:35,987 INFO  [LOAD REGIONS PLUGIN]: Loading region configurations from filesystem

@@ -1,0 +1,3 @@
+<Addins host-reference="/Users/alexanderklein/opensim/bin/OpenSim.dll">
+  <Directory shared="false">/Users/alexanderklein/opensim/bin</Directory>
+</Addins>
