@@ -30,7 +30,7 @@ click "Done", the same wondow appears
 - now click in this window
 ![alt text](assets/error%20message.png)
 
-"Done"
+- click "Done"
 
 Your OpenSim instance should be running
 
