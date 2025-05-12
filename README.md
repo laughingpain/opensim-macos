@@ -16,10 +16,10 @@
 
 - run opensim with dotnet OpenSim.dll
 
-- if this window appears
+- if this window appears, click "Done"
 ![alt text](assets/error%20message.png)
 
-click "Done", the same wondow appears
+- the same wondow appears, leave it open
 
 - open System Settings - > Privacy & Security
 
