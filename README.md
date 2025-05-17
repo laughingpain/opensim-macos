@@ -1,50 +1,93 @@
 # Instructions
 
+> These instructions are worked through in this video, which is why not everything is described here down to the last detail.
+
 1. Install Homebrew
 
     Go to [Homebrew Github](https://github.com/Homebrew/brew/releases/) and download the .pkg file
 
-    - open terminal and add this:
-        - for Apple Silicon `eval "$(/opt/homebrew/bin/brew shellenv)"`
-        - for Apple Intel `eval "$(/usr/local/bin/brew shellenv)"`
+    - install the downloaded package
+    - after installation open terminal and add this:
+        - for Apple Silicon
+        ```
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+        ```
+        - for Apple Intel
+        ```
+        eval "$(/usr/local/bin/brew shellenv)"
+        ```
+---
 
 2. Install Dotnet8 SDK
 
     [Dotnet8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
-3. Install Database
+---
 
-    go to [FlyEnv](https://flyenv.com/download.html) and download the version for your system
+3. Install Database and other needed parts
 
+    - go to [FlyEnv](https://flyenv.com/download.html) download and install the version for your system
 
-- click on the green "<> Code" - Button
-![alt text](assets/image.png)
+    - after installation open FlyEnv and install required parts
+        + php
+        + mariadb
+        + apache
 
-- click "Download Zip"
+---
 
-- move the file to a location you want (you can also rename the file)
+4. Create a Database for Opensim
 
-- unzip
+    - open phpmyadmin in FlyEnv (username and password: root)
 
-- add all necessary config files (OpenSim.ini and in config-include folder)
+---
 
-- run opensim with dotnet OpenSim.dll
+5. Download OpenSim
 
-- if this window appears, click "Done"
-![alt text](assets/error%20message.png)
+    - you can download this package from this repo, from opensimulator.org, osgrid.org or other sites
 
-- the same window appears, leave it open
+    > This repo has the libgdiplus.dylib for macos integrated
 
-- open System Settings - > Privacy & Security
+---
 
-![alt text](assets/privacy.png)
+6. move the file wherever you want and unzip it
 
-- scroll down and Click "Allow Anyway"
+---
 
-- now click in this window "Done"
-![alt text](assets/error%20message.png)
+7. edit config files
 
+    > If you have a running opensim instance and just want to update it, just copy the opensim.ini and the config-include folder to the folder you just unziped.
+    
+    - open a terminal by the bin folder and write this commands
 
-Your OpenSim instance should be running
+    ```
+    cp OpenSim.ini.example OpenSim.ini
+    ```
 
-sorry for my bad english
+    ```
+    cp config-include/StandaloneCommon.ini.example config-include/StandaloneCommon.ini
+    ```
+
+    - now edit the StandaloneCommon.ini (there are many options to do this, i will use nano in the terminal)
+
+    ```
+    nano config-include/StandaloneCommon.ini
+    ````
+
+    Since we want to use mariadb we have to deactivate the entry for SQLite, activate the entries for mysql and adjust the access data to the database.
+
+---
+
+8. Un-quarantine some files
+
+    ```
+    xattr -r -d com.apple.quarantine lib64/
+    ```
+    ```
+    xattr -r -d com.apple.quarantine libgdiplus.dylib
+    ```
+
+9. start your opensim instance
+
+    ```
+    dotnet Opensim.dll
+    ```
