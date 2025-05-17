@@ -1,7 +1,21 @@
 # Instructions
 
-- download and install
-[Dotnet8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.408-macos-arm64-installer)
+1. Install Homebrew
+
+    Go to [Homebrew Github](https://github.com/Homebrew/brew/releases/) and download the .pkg file
+
+    - open terminal and add this:
+        - for Apple Silicon `eval "$(/opt/homebrew/bin/brew shellenv)"`
+        - for Apple Intel `eval "$(/usr/local/bin/brew shellenv)"`
+
+2. Install Dotnet8 SDK
+
+    [Dotnet8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+
+3. Install Database
+
+    go to [FlyEnv](https://flyenv.com/download.html) and download the version for your system
+
 
 - click on the green "<> Code" - Button
 ![alt text](assets/image.png)
