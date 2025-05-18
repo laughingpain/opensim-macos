@@ -78,7 +78,11 @@
 
 ---
 
-8. Un-quarantine some files
+8. Un-quarantine some files and add mono
+
+    ```
+    brew install mono-libgdiplus
+    ```
 
     ```
     xattr -r -d com.apple.quarantine lib64/
