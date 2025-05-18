@@ -8,14 +8,15 @@
 
     - install the downloaded package
     - after installation open terminal and add this:
-        - for Apple Silicon
+        
         ```
-        eval "$(/opt/homebrew/bin/brew shellenv)"
+        echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zshrc
         ```
-        - for Apple Intel
+
         ```
-        eval "$(/usr/local/bin/brew shellenv)"
+        source ~/.zshrc
         ```
+
 ---
 
 2. Install Dotnet8 SDK
