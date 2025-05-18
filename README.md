@@ -1,6 +1,6 @@
 # Instructions
 
-> These instructions are worked through in this video, which is why not everything is described here down to the last detail.
+> These instructions are worked through in this [video](https://youtu.be/f09Hq6PxaRQ), which is why not everything is described here down to the last detail.
 
 1. Install Homebrew
 
