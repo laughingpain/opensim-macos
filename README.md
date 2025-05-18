@@ -85,6 +85,7 @@
     ```
     xattr -r -d com.apple.quarantine libgdiplus.dylib
     ```
+---
 
 9. start your opensim instance
 
